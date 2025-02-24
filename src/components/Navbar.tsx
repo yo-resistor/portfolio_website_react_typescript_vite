@@ -84,3 +84,4 @@ const NavLink = ({
 export default Navbar;
 
 // TODO: Blur the background when the navigation bar is toggled
+// DONE: Yay!
