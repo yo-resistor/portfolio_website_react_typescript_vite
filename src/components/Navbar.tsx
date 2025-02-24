@@ -19,9 +19,15 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
-          <NavLink to="/" path={location.pathname} label="Home" />
-          <NavLink to="/blog" path={location.pathname} label="Blog" />
+          <NavLink to="/" path={location.pathname} label="About" />
+          <NavLink
+            to="/experience"
+            path={location.pathname}
+            label="Experience"
+          />
           <NavLink to="/projects" path={location.pathname} label="Projects" />
+          <NavLink to="/blog" path={location.pathname} label="Blog" />
+          <NavLink to="/contact" path={location.pathname} label="Contact" />
           <DarkModeToggle />
         </div>
 
@@ -37,9 +43,15 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center space-y-4 py-4 bg-white dark:bg-black">
-          <NavLink to="/" path={location.pathname} label="Home" />
-          <NavLink to="/blog" path={location.pathname} label="Blog" />
+          <NavLink to="/" path={location.pathname} label="About" />
+          <NavLink
+            to="/experience"
+            path={location.pathname}
+            label="Experience"
+          />
           <NavLink to="/projects" path={location.pathname} label="Projects" />
+          <NavLink to="/blog" path={location.pathname} label="Blog" />
+          <NavLink to="/contact" path={location.pathname} label="Contact" />
           <DarkModeToggle />
         </div>
       )}
@@ -70,3 +82,5 @@ const NavLink = ({
 );
 
 export default Navbar;
+
+// TODO: Blur the background when the navigation bar is toggled
