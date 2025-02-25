@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import Blog from "./components/Blog.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
+import Side from "./components/Side.tsx";
 
 // Apply dark mode based on localStorage
 if (localStorage.getItem("theme") === "dark") {
@@ -23,6 +24,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<App />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
+      <Side />
     </BrowserRouter>
   </StrictMode>
 );
