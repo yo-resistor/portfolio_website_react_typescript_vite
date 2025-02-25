@@ -27,7 +27,9 @@ function DarkModeToggle() {
       onClick={toggleTheme}
       className="px-4 py-2 bg-blue-600 text-white rounded"
     >
-      {isDark ? "🌙 Dark Mode" : "☀️ Light Mode"}
+      {isDark ? "🌙" : "☀️"}
+      // TODO: Improve the quality of night mode and light mode. Maybe the
+      tutorial website in Notion?
     </button>
   );
 }
