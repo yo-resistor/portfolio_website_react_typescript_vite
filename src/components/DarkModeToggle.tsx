@@ -32,3 +32,5 @@ const DarkModeToggle = () => {
 };
 
 export default DarkModeToggle;
+
+// TODO: https://www.freepik.com/premium-vector/day-night-switch-simple-dark-mode-switch-icon-concept-gadget-interface-switch-day-night-mode-ui-symbol-day-night-mode-vector-off-switch-light-dark-buttons_17403120.htm Update the toggle button for the light and dark mode
