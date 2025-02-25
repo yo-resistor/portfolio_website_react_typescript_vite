@@ -1,37 +1,34 @@
 import { useEffect, useState } from "react";
+import moon from "../assets/moon.svg";
+import sun from "../assets/sun.svg";
 
-function DarkModeToggle() {
-  const [isDark, setIsDark] = useState(false);
+const DarkModeToggle = () => {
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      setIsDark(true);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    if (isDark) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    } else {
+    if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
-    setIsDark(!isDark);
-  };
+  }, [darkMode]);
 
   return (
     <button
-      onClick={toggleTheme}
-      className="px-4 py-2 bg-blue-600 text-white rounded"
+      onClick={() => setDarkMode(!darkMode)}
+      className="w-4 h-4 flex items-center justify-center "
     >
-      {isDark ? "🌙" : "☀️"}
-      // TODO: Improve the quality of night mode and light mode. Maybe the
-      tutorial website in Notion?
+      <img
+        src={darkMode ? moon : sun}
+        alt={darkMode ? "Dark Mode" : "Light Mode"}
+        className="w-4 h-4"
+      />
     </button>
   );
-}
+};
 
 export default DarkModeToggle;

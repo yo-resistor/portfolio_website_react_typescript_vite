@@ -7,18 +7,18 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu toggle
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-md z-50 font-mono">
       <div className="max-w-4xl mx-auto flex items-center justify-between p-4">
         {/* Logo / Home Link */}
         <Link
           to="/"
-          className="text-2xl font-bold text-gray-900 dark:text-white"
+          className="text-sm font-bold text-gray-900 dark:text-white"
         >
           My Portfolio
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-6">
+        <div className="text-sm hidden md:flex items-center justify-between space-x-6">
           <NavLink to="/" path={location.pathname} label="About" />
           <NavLink
             to="/experience"
@@ -33,7 +33,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-900 dark:text-white"
+          className="text-lg md:hidden text-gray-900 dark:text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           ☰
@@ -71,7 +71,7 @@ const NavLink = ({
 }) => (
   <Link
     to={to}
-    className={`text-lg font-medium ${
+    className={`text-sm font-medium ${
       path === to
         ? "text-blue-500 dark:text-blue-400 underline"
         : "text-gray-900 dark:text-white hover:text-blue-500"
@@ -84,4 +84,4 @@ const NavLink = ({
 export default Navbar;
 
 // TODO: Blur the background when the navigation bar is toggled
-// DONE: Yay!
+// DONE: Yay!;
