@@ -79,3 +79,4 @@ export default SocialSide;
 // TODO: Maybe I need to learn how to create he dark mode svg based on the light mode
 // TODO: twitter or thread?
 // TODO: how the browser makes icon dark/light: https://stackoverflow.com/questions/67187091/creating-svg-that-appears-black-in-light-mode-and-light-in-dark-mode
+// TODO: fix hover effect on each icon
