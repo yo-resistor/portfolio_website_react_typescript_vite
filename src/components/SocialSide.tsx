@@ -1,8 +1,3 @@
-// import githubDark from "../assets/github-dark.svg";
-// import githubLight from "../assets/github-light.svg";
-// import linkedinDark from "../assets/linkedin-dark.svg";
-// import linkedinLight from "../assets/linkedin-light.svg";
-
 const SocialSide = () => {
   return (
     // Left side bar: Email
@@ -103,10 +98,6 @@ const SocialSide = () => {
 
 export default SocialSide;
 
-// TODO: google scholar dark mode svg
-// TODO: instagram light mode svg
-// TODO: instagram dark mode svg
-// TODO: Maybe I need to learn how to create he dark mode svg based on the light mode
 // TODO: twitter or thread?
 // TODO: how the browser makes icon dark/light: https://stackoverflow.com/questions/67187091/creating-svg-that-appears-black-in-light-mode-and-light-in-dark-mode
 // TODO: fix hover effect on each icon
