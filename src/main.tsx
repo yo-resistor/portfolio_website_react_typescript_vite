@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
+import App from "./App.tsx";
 import Blog from "./components/Blog.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
@@ -21,7 +22,7 @@ createRoot(document.getElementById("root")!).render(
       <Navbar />
       <Hero />
       <Routes>
-        {/* <Route path="/" element={<App />} /> */}
+        <Route path="/" element={<App />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
       <EmailSide />
