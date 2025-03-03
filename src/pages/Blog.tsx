@@ -1,5 +1,3 @@
-// Blog list
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -10,14 +8,15 @@ const blogPosts = [
     description: "My first blog post.",
   },
   {
-    title: "Second Post",
-    slug: "second-post",
-    description: "Another interesting post.",
-  },
-  {
     title: "Tailwind CSS Guide",
     slug: "tailwind-guide",
     description: "A guide to Tailwind CSS v4.",
+  },
+  {
+    title: "How to Install PyTorch in a Miniconda Environment",
+    slug: "install-pytorch-miniconda",
+    description:
+      "A step-by-step guide to installing PyTorch in a Miniconda environment.",
   },
 ];
 
