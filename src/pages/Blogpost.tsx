@@ -26,3 +26,5 @@ const BlogPost = () => {
 };
 
 export default BlogPost;
+
+// TODO: Modify the layout based on https://steventey.com/blog and https://avandekleut.github.io/vae/. Please do not forget about the search bar function as well.
