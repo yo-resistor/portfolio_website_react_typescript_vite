@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 import Blog from "./pages/Blog.tsx";
-import BlogPost from "./pages/Blogpost.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
 import Navbar from "./components/Navbar.tsx";
 import EmailSide from "./components/EmailSide.tsx";
 import Projects from "./pages/Projects.tsx";
