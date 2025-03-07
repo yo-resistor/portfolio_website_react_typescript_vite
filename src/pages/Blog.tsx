@@ -29,7 +29,7 @@ const Blog = () => {
 
   return (
     <div id="blog" className="py-20 px-6">
-      <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+      <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
         Blog
       </h1>
       <input
@@ -45,7 +45,7 @@ const Blog = () => {
             <li key={post.slug}>
               <Link
                 to={`/blog/${post.slug}`}
-                className="text-xl font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-xl font-semibold text-blue-500 dark:text-blue-400 hover:underline"
               >
                 {post.title}
               </Link>

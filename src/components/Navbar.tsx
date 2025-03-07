@@ -2,20 +2,28 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
+import logoDarkBG from "../assets/logo_dark_bg.svg";
+import logoWhiteBG from "../assets/logo_white_bg.svg";
 
 const Navbar = () => {
   const location = useLocation(); // Get the current route
   const [isOpen, setIsOpen] = useState(false); // Mobile menu toggle
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-md z-50 font-mono">
+    <nav className="fixed top-0 left-0 w-full bg-white/70 dark:bg-dark-bg-3 backdrop-blur-md shadow-md z-50 font-mono">
       <div className="max-w-4xl mx-auto flex items-center justify-between p-4">
         {/* Logo / Home Link */}
-        <Link
-          to="/"
-          className="text-sm font-bold text-gray-900 dark:text-white"
-        >
-          My Portfolio
+        <Link to="/">
+          <img
+            src={logoDarkBG}
+            alt="Logo Dark Background"
+            className="block dark:hidden h-10 transition-opacity duration-300"
+          />
+          <img
+            src={logoWhiteBG}
+            alt="Logo White Background"
+            className="dark:block hidden h-10 transition-opacity duration-300"
+          />
         </Link>
 
         {/* Desktop Navigation */}
