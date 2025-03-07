@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import GitHubIcon from "./icons/GitHubIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
+import GoogleScholarIcon from "./icons/GoogleScholarIcon";
+import InstagramIcon from "./icons/InstagramIcon";
 
 const Hero = () => {
   return (
@@ -39,6 +43,60 @@ const Hero = () => {
           whileHover={{ scale: 1.05 }}
         >
           Contact Me →
+        </motion.a>
+      </div>
+      <div className="mt-4 flex items-center justify-center gap-x-6 sm:hidden">
+        {/* GitHub icon dark and light mode */}
+        <motion.a
+          href="https://github.com/yo-resistor"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fill-gray-700"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <GitHubIcon />
+        </motion.a>
+        {/* LinkedIn icon dark and light mode */}
+        <motion.a
+          href="https://www.linkedin.com/in/yohm/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fill-gray-700"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <LinkedInIcon />
+        </motion.a>
+        {/* Google scholar icon dark and light mode */}
+        <motion.a
+          href="https://scholar.google.com/citations?user=MdnAj8IAAAAJ&hl=en&oi=ao"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fill-gray-700"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <GoogleScholarIcon />
+        </motion.a>
+        {/* Instagram icon dark and light mode */}
+        <motion.a
+          href="https://www.instagram.com/yunsik_ohm/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fill-gray-700"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+        >
+          <InstagramIcon />
         </motion.a>
       </div>
     </section>

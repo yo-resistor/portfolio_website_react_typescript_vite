@@ -13,7 +13,7 @@ const SocialSide = () => {
           href="https://github.com/yo-resistor"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:scale-110 transition"
+          className="fill-gray-600"
         >
           <GitHubIcon />
         </a>
@@ -22,7 +22,7 @@ const SocialSide = () => {
           href="https://www.linkedin.com/in/yohm/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:scale-110 transition"
+          className="fill-gray-600"
         >
           <LinkedInIcon />
         </a>
@@ -31,7 +31,7 @@ const SocialSide = () => {
           href="https://scholar.google.com/citations?user=MdnAj8IAAAAJ&hl=en&oi=ao"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:scale-110 transition"
+          className="fill-gray-600"
         >
           <GoogleScholarIcon />
         </a>
@@ -40,7 +40,7 @@ const SocialSide = () => {
           href="https://www.instagram.com/yunsik_ohm/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:scale-110 transition"
+          className="fill-gray-600"
         >
           <InstagramIcon />
         </a>
