@@ -20,12 +20,12 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="w-4 h-4 flex items-center justify-center "
+      className="w-5 h-5 flex items-center justify-center "
     >
       <img
         src={darkMode ? moon : sun}
         alt={darkMode ? "Dark Mode" : "Light Mode"}
-        className="w-4 h-4"
+        className="w-5 h-5 pb-0.5"
       />
     </button>
   );
