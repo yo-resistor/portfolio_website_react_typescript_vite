@@ -86,3 +86,6 @@ export default Navbar;
 
 // TODO: Blur the background when the navigation bar is toggled
 // DONE: Yay!;
+// TODO: Custom define the color themes for orange, blue, and dark.
+// TODO: Properly assign color for each theme and each component.
+// TODO: Update logo.
