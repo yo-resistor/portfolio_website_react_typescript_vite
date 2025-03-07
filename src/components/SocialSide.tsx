@@ -1,7 +1,7 @@
 const SocialSide = () => {
   return (
     // Left side bar: Email
-    <div className="fixed bottom-0 left-3 origin-bottom-left flex flex-col items-center gap-5">
+    <div className="fixed bottom-0 left-3 origin-bottom-left flex flex-col items-center gap-5 max-sm:hidden">
       <div className="flex flex-col items-center gap-4">
         {/* GitHub icon dark and light mode */}
         <a

@@ -1,7 +1,7 @@
 const EmailSide = () => {
   return (
     // Right side bar: Email
-    <div className="fixed bottom-0 right-8.5 rotate-90 origin-bottom-right flex flex-row items-center gap-5">
+    <div className="fixed bottom-0 right-8.5 rotate-90 origin-bottom-right flex flex-row items-center gap-5 max-sm:hidden">
       <a
         href="mailto:yunsikohm@gmail.com"
         className="text-gray-600 dark:text-gray-300 text-sm font-medium tracking-widest hover:text-blue-500 transition rounded-md"

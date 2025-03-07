@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/70 dark:bg-dark-bg-3 backdrop-blur-md shadow-md z-50 font-mono">
-      <div className="max-w-4xl mx-auto flex items-center justify-between p-4">
+      <div className=" mx-auto flex items-center justify-between py-2 px-4 md:px-14 sm:px-8">
         {/* Logo / Home Link */}
         <Link to="/">
           <img
@@ -94,4 +94,4 @@ export default Navbar;
 
 // TODO: Blur the background when the navigation bar is toggled
 // DONE: Yay!;
-// Logo position and other text position alignment: inspiration from Steven Tey website.
+// TODO: Logo position and other text position alignment: inspiration from Steven Tey website.
