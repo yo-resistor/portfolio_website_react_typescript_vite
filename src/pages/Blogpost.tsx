@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
+import FirstPost from "../posts/first-post.mdx";
+import InstallPytorchMiniconda from "../posts/pytorch/install-pytorch-miniconda.mdx";
 
 // Import all MDX blog posts, including those in subfolders
-const posts = {
-  "first-post": lazy(() => import("../posts/first-post.mdx")),
-  "install-pytorch-miniconda": lazy(
-    () => import("../posts/pytorch/install-pytorch-miniconda.mdx")
-  ),
+const posts: Record<string, React.ElementType> = {
+  "first-post": FirstPost,
+  "install-pytorch-miniconda": InstallPytorchMiniconda,
 };
 
 // Fallback 404 component if post not found
