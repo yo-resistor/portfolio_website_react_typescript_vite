@@ -28,11 +28,11 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden sm:flex items-center justify-between space-x-6">
-          <NavLink to="/" path={location.pathname} label="About" />
+          <NavLink to="/about" path={location.pathname} label="About" />
           <NavLink
             to="/experience"
             path={location.pathname}
-            label="Experiece"
+            label="Experience"
           />
           <NavLink to="/projects" path={location.pathname} label="Projects" />
           <NavLink to="/blog" path={location.pathname} label="Blog" />
@@ -52,7 +52,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="sm:hidden flex flex-col items-center space-y-4 py-4 bg-white dark:bg-black">
-          <NavLink to="/" path={location.pathname} label="About" />
+          <NavLink to="/about" path={location.pathname} label="About" />
           <NavLink
             to="/experience"
             path={location.pathname}
