@@ -6,7 +6,7 @@ import InstagramIcon from "./icons/InstagramIcon";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col justify-center min-h-screen px-8 md:px-19 sm:px-15 bg-white dark:bg-dark-bg-3">
+    <section className="flex flex-col justify-center min-h-screen px-10 md:px-40 sm:px-20 bg-white dark:bg-dark-bg-3">
       <motion.h2
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
-        className="max-[300px]:hidden mb-6 text-base text-gray-700 dark:text-gray-300 w-8/9 sm:w-7/9 md:w-5/9 lg:w-5/9"
+        className="max-[300px]:hidden mb-6 text-base text-gray-700 dark:text-gray-300 w-8/9 sm:w-7/9 md:w-6/9 lg:w-5/9"
       >
         I’m passionate about applying machine learning to real-world problems.
         Currently, I’m developing a framework to optimize material composition

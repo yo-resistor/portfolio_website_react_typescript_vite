@@ -95,3 +95,4 @@ export default Navbar;
 // TODO: Blur the background when the navigation bar is toggled
 // DONE: Yay!;
 // TODO: Logo position and other text position alignment: inspiration from Steven Tey website.
+// TODO: Take the dark light toggle mode out of the nav bar in mobile version.
