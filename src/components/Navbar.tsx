@@ -11,28 +11,28 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/70 dark:bg-dark-bg-3 backdrop-blur-md shadow-md z-50 font-mono">
-      <div className=" mx-auto flex items-center justify-between py-2 px-4 md:px-14 sm:px-8">
+      <div className="mx-auto flex items-center justify-between py-2 px-4 md:px-14 sm:px-10">
         {/* Logo / Home Link */}
         <Link to="/">
           <img
-            src={logoDarkBG}
-            alt="Logo Dark Background"
+            src={logoWhiteBG}
+            alt="Logo White Background"
             className="block dark:hidden h-10 transition-opacity duration-300"
           />
           <img
-            src={logoWhiteBG}
-            alt="Logo White Background"
+            src={logoDarkBG}
+            alt="Logo Dark Background"
             className="dark:block hidden h-10 transition-opacity duration-300"
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="text-sm hidden md:flex items-center justify-between space-x-6">
+        <div className="hidden sm:flex items-center justify-between space-x-6">
           <NavLink to="/" path={location.pathname} label="About" />
           <NavLink
             to="/experience"
             path={location.pathname}
-            label="Experience"
+            label="Experiece"
           />
           <NavLink to="/projects" path={location.pathname} label="Projects" />
           <NavLink to="/blog" path={location.pathname} label="Blog" />
@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="text-lg md:hidden text-gray-900 dark:text-white"
+          className="text-2xl pb-1.5 sm:hidden text-gray-900 dark:text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           ☰
@@ -51,7 +51,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center space-y-4 py-4 bg-white dark:bg-black">
+        <div className="sm:hidden flex flex-col items-center space-y-4 py-4 bg-white dark:bg-black">
           <NavLink to="/" path={location.pathname} label="About" />
           <NavLink
             to="/experience"
@@ -80,9 +80,9 @@ const NavLink = ({
 }) => (
   <Link
     to={to}
-    className={`text-sm font-medium ${
+    className={`text-xs font-medium ${
       path === to
-        ? "text-blue-500 dark:text-blue-400 underline"
+        ? "text-blue-500 dark:text-blue-300 underline"
         : "text-gray-900 dark:text-white hover:text-blue-500"
     }`}
   >
